@@ -94,33 +94,238 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*, #wykres_formy, #jeden_za_wszystkich, #sponsorzy*/
- #main, #header{
-     width: 90%;
- }
 
-.main{
-    float: left;
+
+
+
+
+/*************                             Navigation bar                         ************/
+
+#main_nav_black_bar{
+    height: 25px;
+    background-color: black;
 }
 
-#left_main{
-    width: 45%;
+.nav_bar{
+    height: 54px;
+    text-align: center;
+    background-color: #53a746;
 }
 
-#middle_main{
-    width: 20%;
-}
-
-#right_main{
-    width: 35%;
-}
-
-.blok_aktualnosci{
-    height: 25%;
+.nav_bar img{
+    vertical-align: middle;
+    -webkit-transform: translateY(-22%);
+    -moz-transform: translateY(-22%);
+    -ms-transform: translateY(-22%);
+    -o-transform: translateY(-22%);
+    transform: translateY(-22%);
 }
 
 
 
+
+/*************                             Header                         ************/
+
+
+
+.header{
+
+    background-image:  url("../img/header-crowd-bg.jpg");
+    background-size: cover;
+}
+
+.main_home__header{
+    background-color: rgba(0,0,0, 0.7);
+    padding: 6em 1em;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.main_home__header h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.main_home__header span{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #53a746;
+}
+
+.main_home__header p{
+    font-size: 1.2em;
+}
+
+
+/***************                           main_board                       ******************/
+
+.main_board{
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+}
+
+.name_bar{
+    background-color: #53a746;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.name_bar h2{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+}
+
+.col-sm-5, .col-sm-4{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/***************         ///               left main_board         ///           ******************/
+
+
+.left_part{
+    margin-bottom: 10px;
+}
+
+.left_content #new_information{
+    background-color: #53a746;
+    color: white;
+}
+
+#new_information img{
+    height: 100%;
+    width: 100%;
+}
+
+#new_information__content{
+    padding: 3rem;
+}
+
+#new_information__date{
+    font-size: 12px;
+}
+
+#new_information h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#new_information a:hover{
+    color: white;
+}
+
+.information_part{
+    padding: 3rem;
+    background-color: #f1f1f1;
+}
+
+.information_part{
+    border-top: 1px solid #e2e2e2;
+
+}
+
+.information_part a{
+    color: #000 !important;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.information_part button{
+    padding: 18px 26px;
+    background-color: #53a746;
+}
+
+.old_information__date{
+    font-size: 12px;
+    color: #53a746;
+}
+
+/***************         ///               middle main_board         ///           ******************/
+
+.middle_part .middle_block {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.middle_part .middle_block img{
+    height: 100%;
+    width: 100%;
+}
+
+.img_changer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0, 0.6);
+
+}
+
+.middle_part .middle_block h3{          /*text*/
+    position: absolute;
+    left: 0.5em;
+    bottom: 1em;
+    margin: 0px;
+    color: white;
+    font-weight: 600;
+}
+/*
+.middle_part .middle_block h3:hover{
+    text-decoration: underline;
+}
+
+.img_changer:hover{
+    background-color: rgba(83, 167, 70, 0.6);
+}
+
+
+
+/***************                           Responsiveness                       ******************/
+
+@media only screen and (min-width:1440px ){
+    /* styles for browsers larger than 1440px; */
+    .main_home__header{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1440px){
+    /* styles for browsers larger than 1024px; */
+    .main_home__header{
+        font-size: 18px;
+    }
+
+    .main_home__header{
+        padding: 6em 3em;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width: 1024px){
+    /* styles for browsers larger than 720px; */
+    .main_home__header{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 720px){
+    /* styles for browsers larger than 480px; */
+    .main_home__header{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .main_home__header{
+        font-size: 8px;
+    }
+}
 
 
 

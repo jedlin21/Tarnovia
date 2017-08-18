@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pl">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,9 +10,18 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+
+
+
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -21,139 +30,196 @@
 
         <!-- Add your site or application content here -->
 
-            <nav>
 
-            </nav>
-            <header id="header">
+        <!-- Navbar
 
-            </header>
-            <section id="main">
-                <section id="left_main" class="main">
-                    <header class="gorny_blok_main">
-                       <div>Aktualności</div>
-                    </header>
-                    <section class="left_content">
-                        <div id="najnowsza_aktualnosc">
-                            <a href="#" alt="Obóz dla młodzieży"><img src="#" alt="zdjęcie aktualności">
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Piewsza drużyna</a></li>
+                    <li><a href="#">Drużyny młodzieżowe</a></li>
+                    <li id="picture"><a href="#">Picture</a></li>
+                    <li><a href="#">Klub</a></li>
+                    <li><a href="#">Biznes</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Wyszukaj">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                     </li>
+                </ul>
+            </div>
+        </nav>
+-->
+        <nav>
+            <div id="main_nav_black_bar"></div>
+            <div class="nav_bar"><a href="#"><img src="img/gkstarnovia.svg" alt="Godlo"></a></div>
+        </nav>
+
+
+
+                        <!--************************        ***header***          ************************-->
+        <section class="header">
+            <div class="main_home__header">
+                <h1>Świetny start!</h1>
+                <p><span>4:0 Z TRZCIANKĄ</span></p>
+                <p>Następny mecz już za tydzień z Kotwicą w Kórniku</p>
+            </div>
+        </section>
+
+
+
+
+                        <!--************************         ***main_board***          ************************-->
+
+
+
+                    <section class="container main_board">
+                        <div class="row">
+
+                        <!-- main_board left_part -->
+
+                        <section  class="left_part col-sm-5">
+                            <header class="name_bar">
+                                <div><h2>AKTUALNOŚCI</h2></div>
+                            </header>
+                            <section class="left_content">
+                                    <article id="new_information">
+                                        <div><a href="#" alt="Obóz dla młodzieży"><img src="img/skra40.jpg" alt="Piłkarz w
+                                            czerwonej koszulce w pełnym biegu na środku murawy wzrokiem szuka piłki"></div>
+                                        </a>
+                                        <div id="new_information__content">
+                                            <h4 id="new_information__date">16 SIERPNIA O 07:37</h4>
+                                            <a href="#" alt="Obóz dla młodzieży">
+                                                <h3>Mocny początek i walka do końca z Iskrą</h3>
+                                            </a>
+                                            <h4>W 3. kolejce nowego sezonu pokonaliśmy u siebie Iskrę Szydłowo. To druga wygrana w
+                                               drugim meczu 2017/2018. W pierwszych dwóch minutach meczu mieliśmy już dwa trafienia!</h4>
+                                            <a href="#" alt="Facebook bar"><div id="facebook_bar">F</div></a>
+                                        </div>
+                                    </article>
+                                <div id="old_informations">
+                                    <article class="information_part">
+                                        <h4 class="old_information__date">16 SIERPNIA O 07:37</h4>
+                                        <div class="old_information__text">
+                                            <a href="#" alt="link">Obóz dla dzieci i młodzieży – „Borne Sulinowo 2017”!</a>
+                                        </div>
+                                    </article>
+                                    <article class="information_part">
+                                        <h4 class="old_information__date">20 MARCA O 10:16</h4>
+                                        <div class="old_information__text">
+                                            <a href="#" alt="link">Trwa dobra seria!</a>
+                                        </div>
+                                    </article>
+                                    <article class="information_part">
+                                        <h4 class="old_information__date">08 MARCA O 09:15</h4>
+                                        <div class="old_information__text">
+                                            <a href="#" alt="link">Wracamy do gry! Najpierw 1/8 Pucharu Polski.</a>
+                                        </div>
+                                    </article>
+                                    <article class="information_part">
+                                        <button type="button" class="btn btn-success">Zobacz wszystkie</button>
+                                    </article>
+                            </div>
+                        </section>
+                        </section>
+
+
+                            <!--************************   main_board middle_part ************************-->
+
+
+                            <section class="middle_part col-sm-3">
+                                <header class="name_bar">
+                                    <h2>NIE&nbspPRZEGAP</h2>
+                                </header>
+                                    <article class="middle_block first"><a href="#" alt="Trwa nabór do Tarnovii!">
+                                        <img src="img/trwa_nabor.jpg">
+                                        <div class="img_changer"></div>
+                                        <h3 class="test">Trwa nabór do Tarnovii!</h3></a>
+                                    </article>
+                                    <article class="middle_block second"><a href="#" alt="Prowadzisz biznes? Dołącz!">
+                                        <img src="img/prowadzisz_biznes.jpg">
+                                        <div class="img_changer"></div>
+                                        <h3>Prowadzisz biznes? Dołącz!</h3></a>
+                                    </article>
+                                    <article class="middle_block third"><a href="#" alt="Treningi dla młodzieży">
+                                        <img src="img/treningi.jpg">
+                                        <div class="img_changer"></div>
+                                        <h3>Treningi dla młodzieży</h3></a>
+                                    </article>
+                                   <article class="middle_block fourth"><a href="#" alt="Wyniki na żywo">
+                                       <img src="img/wyniki.jpg">
+                                       <div class="img_changer"></div>
+                                       <h3>Wyniki na żywo</h3></a>
+                                    </article>
+                            </section>
+
+                            <!--************************ main_board right_part ************************-->
+
+                        <section class="right_part col-sm-4">
+                            <header class="name_bar">
+                                <h2>NAJBLIŻSZE MECZE</h2>
+                            </header>
                             <article>
-                                Obóz dla młodzieży
-                            </article></a>
-                        </div>
-                        <div id="zbior_aktualnosci">
-                            <article class="blok_aktualnosci">
-                                <div class="data">
-                                    21 MARCA O 13:40
-                                </div>
-                                <div class="informacja">
-                                    <a href="#" alt="link">Obóz dla dzieci i młodzieży – „Borne Sulinowo 2017”!</a>
-                                </div>
+                                <table class="main_table">
+                                   <tbody>
+                                      <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
+                                      <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
+                                      <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
+                                      <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
+                                      <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
+                                   </tbody>
+                                </table></article>
+
+                                <article>
+                                   <table id="ostatni mecz">
+                                       <tr><td colspan="2">Ostatni mecz</td><td>06 MAJA, 15:00</td></tr>
+                                       <tr><td>logo</td><td>1:1<br /><span>(1:0)</span></td><td>logo</td></tr>
+                                       <tr><td class="tab_ostatni_mecz_dolne_komorki">Nielba Wągrowiec</td>
+                                           <td class="tab_ostatni_mecz_dolne_komorki">GKS Tarnovia</td></tr>
+                                   </table>
+                                </article>
+
+
+                            <header class="gorny_blok_main">Tabela</header>
+                            <article id="tabela">
+                                <table>
+                                    <tr><td>1</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>2</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>3</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>4</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>5</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>6</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>7</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>8</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>9</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>10</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>11</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>12</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>13</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>14</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>15</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                    <tr><td>16</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
+                                </table>
                             </article>
-                            <article class="blok_aktualnosci">
-                                <div class="data">
-                                    20 MARCA O 10:16
-                                </div>
-                                <div class="informacja">
-                                    <a href="#" alt="link">Trwa dobra seria!</a>
-                                </div>
-                            </article>
-                            <article class="blok_aktualnosci">
-                                <div class="data">
-                                    08 MARCA O 09:15
-                                </div>
-                                <div class="informacja">
-                                    <a href="#" alt="link">Wracamy do gry! Najpierw 1/8 Pucharu Polski.</a>
-                                </div>
-                            </article>
-                            <article class="blok_aktualnosci">
-                                <a href="#" id="zobacz_wszystkie_link"><div id="zobacz_wszystkie">
-                                    Zobacz wszystkie
-                                </div></a>
-                            </article>
-                    </div>
-                </section>
-                    <div id="middle_main" class="main">
-                        <header class="gorny_blok_main">
-                            Nie przegap
-                        </header>
-                            <a href="#" alt="link"><article id="middle_main_pierwszy" class="middle_block">
-                               Trwa nabór do Tarnovii!
-                            </article></a>
-                            <a href="#" alt="link"><article id="middle_main_drugi" class="middle_block">
-                               Prowadzisz biznes? Dołącz!
-                            </article></a>
-                            <a href="#" alt="link"><article id="middle_main_trzeci" class="middle_block">
-                                Treningi dla młodzieży
-                            </article></a>
-                            <a href="#" alt="link"> <article id="middle_main_czwarty" class="middle_block">
-                                Wyniki na żywo
-                            </article></a>
-                    </div>
-
-                <section id="right_main" class="main">
-                    <header class="gorny_blok_main">Najbliższe mecze</header>
-                    <article>
-                        <table class="main_table">
-                           <tbody>
-                              <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
-                              <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
-                              <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
-                              <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
-                              <tr><td>13.05</td><td>15:00</td><td>vs</td><td>Unia Swarzęc</td><td>D</td></tr>
-                           </tbody>
-                        </table></article>
-
-                        <article>
-                           <table id="ostatni mecz">
-                               <tr><td colspan="2">Ostatni mecz</td><td>06 MAJA, 15:00</td></tr>
-                               <tr><td>logo</td><td>1:1<br /><span>(1:0)</span></td><td>logo</td></tr>
-                               <tr><td class="tab_ostatni_mecz_dolne_komorki">Nielba Wągrowiec</td>
-                                   <td class="tab_ostatni_mecz_dolne_komorki">GKS Tarnovia</td></tr>
-                           </table>
-                        </article>
 
 
-                    <header class="gorny_blok_main">Tabela</header>
-                    <article id="tabela">
-                        <table>
-                            <tr><td>1</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>2</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>3</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>4</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>5</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>6</td><td>Tutaj dokonuje zmiany</td><td>25</td><td>50</td></tr>
-                            <tr><td>7</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>8</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>9</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>10</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>11</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>12</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>13</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>14</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>15</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                            <tr><td>16</td><td>GKS Tarnovia</td><td>25</td><td>50</td></tr>
-                        </table>
-                    </article>
-
-
-                </section>
-
-            </section>
-            <section id="wykres_formy">
-<!--wykres, zielone ciemne tlo, kropki tam gdzie miejsce-->
-            </section>
-            <section id="jeden_za_wszystkich">
-<!--napis + godło , zielone tlo-->
-            </section>
-            <section id="sponsorzy">
-
-            </section>
-            <footer>
-
-            </footer>
+                        </section>
+                      </div>
+                    </section>
 
 
 
-
+                <!--wykres, zielone ciemne tlo, kropki tam gdzie miejsce-->
+        <!--napis + godło , zielone tlo-->
 
 
 
