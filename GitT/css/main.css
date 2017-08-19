@@ -338,8 +338,136 @@ textarea {
 .table_head_letter{
     width: 8%;
     text-align: center;
-    border-right: none;
+    border-right: none !important;
 }
+
+/* ********        second table      right main_board    ******** */
+
+#second_table{
+    margin: 40px 0px;
+}
+
+#second_row, #third_row{
+    clear: both;
+}
+
+#first_row_left{
+    float: left;
+}
+
+#first_row_date{
+    float: right;
+}
+
+.second_row_logo, #second_row_scores, .teams{
+    float: left;
+}
+
+.second_row_logo{
+    width: 35%;
+}
+
+.second_row_logo img{
+    height: 54px;
+    width: 50px;
+}
+
+#second_row_scores{
+    width: 30%;
+}
+
+#third_row{
+    margin-bottom: 20px;
+}
+
+.teams{
+    width: 50%;
+    text-align: center;
+    padding: 10px 30px;
+    color: white;
+    background-color: #53a746;
+}
+
+
+
+/* ********        third table      right main_board    ******** */
+.table_row_place, .table_row_team, .table_row_round, .table_row_points{
+    float: left;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0px 9px 0px;
+    margin: 0px 1%;
+}
+
+.table_row_place, .table_row_round, .table_row_points{
+    width: 16%;
+    text-align: center;
+    color: #53a746;
+}
+
+.table_row_place{
+    width: 5%;
+    text-align: center;
+    color: #53a746;
+}
+
+.table_row_team{
+    width: 71%;
+    text-align: left;
+}
+
+.table_row_round{
+    width: 8%;
+    text-align: center;
+    color: #53a746;
+}
+
+.table_row_points{
+    width: 8%;
+    text-align: center;
+    color: #53a746;
+}
+
+.table_span_place, .table_span_team, .table_span_round, .table_span_points{
+    float: left;
+    color: white;
+    background-color: #d7be63;
+    border-right: 1px solid #b89e42;
+    padding: 10px 0px;
+}
+
+.table_span_place{
+    width: 7%;
+    text-align: center;
+}
+
+.table_span_team{
+    width: 73%;
+    text-align: left;
+}
+
+.table_span_team span{
+    margin-left: 1.79%;
+}
+
+.table_span_round{
+    width: 10%;
+    text-align: center;
+}
+
+.table_span_points{
+    width: 10%;
+    text-align: center;
+    border-right: none !important;
+}
+
+.above_GKS{
+    border-bottom: none !important;
+}
+
+
+
+
+
 /***************                           Responsiveness                       ******************/
 
 @media only screen and (min-width:1440px ){
