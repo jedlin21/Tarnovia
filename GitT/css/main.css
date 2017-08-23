@@ -181,6 +181,11 @@ textarea {
     margin: 0 0 0 20px;
 }
 
+.col-sm-5, .col-sm-4{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 
 
 /***************         ///               left main_board         ///           ******************/
@@ -202,6 +207,7 @@ textarea {
 
 #new_information__content{
     padding: 3rem;
+    padding-bottom: 6rem;
 }
 
 #new_information__date{
@@ -212,6 +218,13 @@ textarea {
     color: white;
     font-size: 32px;
     font-weight: 600;
+}
+
+.left_content #facebook_bar{
+    height: 28px;
+    float: left;
+    width: 30px;
+    margin-top: 15px;
 }
 
 #new_information a:hover{
@@ -257,14 +270,24 @@ textarea {
     width: 100%;
 }
 
+.img_darker{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.6;
+}
+
 .img_changer{
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: rgba(0,0,0, 0.6);
-
+    background-color: red;
+    opacity: 0;
 }
 
 .middle_part .middle_block h3{          /*text*/
@@ -275,6 +298,8 @@ textarea {
     color: white;
     font-weight: 600;
 }
+
+
 
 
 /***************         ///               right main_board         ///           ******************/
