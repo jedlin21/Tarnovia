@@ -13,5 +13,4 @@ $(document).ready(function(){
         $(".img_changer",this).animate({opacity: '0'}, "fast");
         $("h3", this).css("text-decoration", "none");
     });
-
 });

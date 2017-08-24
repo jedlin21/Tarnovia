@@ -562,7 +562,9 @@ textarea {
 
 #scroll_table{
     overflow: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+
 }
 
 #table{
@@ -593,7 +595,6 @@ textarea {
 }
 
 #columns{
-    overflow: hidden;
     float: left;
 }
 
@@ -622,8 +623,102 @@ textarea {
     padding-top: 10px;
     font-size: 12px;
 }
+/* ********        main_table tarnovia_place    ******** */
+
+.tarnovia_place{
+    position: relative;
+}
+
+.circle{
+    height: 7px;
+    width: 7px;
+    background-color: #d7be63;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+.pop_up{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 150px;
+    background-color: #53a746;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.columns__column:hover .pop_up{
+    z-index: 999;
+}
+
+.logo{
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+
+.logo img{
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#left_logo{
+    border-right: 1px solid #377735;
+}
+
+#right_logo{
+    border-left: 1px solid #377735;
+}
+
+#scores{
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+#scores #match_score{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
+.pointer {
+    height: 10px;
+    width: 10px;
+    background-color: #53a746;
+    position: absolute;
+    -webkit-transform: translate(701%, 450%) rotate(45deg);
+    -moz-transform: translate(701%, 450%) rotate(45deg);
+    -ms-transform: translate(701%, 450%) rotate(45deg);
+    -o-transform: translate(701%, 450%) rotate(45deg);
+    transform: translate(701%, 450%) rotate(45deg);
+}
+
+
 
 /* ********        main_table footer    ******** */
+
 
 
 #main_table__footer .first_group{
@@ -649,6 +744,13 @@ textarea {
     /* styles for browsers larger than 1440px; */
     .main_home__header{
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1150px){
+    /* styles  smaller than 1100px; */
+    #scroll_table{
+        overflow: visible;
     }
 }
 
