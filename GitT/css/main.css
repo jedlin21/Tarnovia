@@ -540,8 +540,108 @@ textarea {
 }
 
 
+/***************                           ***main_table***                       ******************/
+
+.main_table{
+    overflow: hidden;
+    background-color: #06190e;
+    background: -webkit-linear-gradient(left, #06190e,#0f2e1b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #06190e,#0f2e1b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #06190e,#0f2e1b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #06190e,#0f2e1b); /* Standard syntax */
+    color: #1d4a1d;
+}
+
+.main_table .content{
+    padding: 50px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1190px;
+    margin-bottom: 60px;
+}
+
+#scroll_table{
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+#table{
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_table__head{
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+#main_table__body{
+    padding: 0 20px;
+}
+
+#left_index{
+    float: left;
+}
+
+#left_index .cell_i{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+#columns{
+    overflow: hidden;
+    float: left;
+}
+
+.columns__column{
+    float: left;
+}
+
+.columns__column:nth-child(1) .cell_c{
+    border-left: 1px solid #1d4a1d;
+}
+
+.columns__column:hover .cell_c{
+    background-color: rgba(55, 96, 49, 0.83);
+}
+
+.columns__column  .cell_c{
+    width: 35px;
+    height: 20px;
+    border-top: 1px solid #1d4a1d;
+    border-right: 1px solid #1d4a1d;
+}
+
+.bottom_index{
+    border-top: 1px solid #1d4a1d;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+/* ********        main_table footer    ******** */
 
 
+#main_table__footer .first_group{
+    float: left;
+    border-top: 1px solid #1d4a1d;
+    border-bottom: 1px solid #1d4a1d;
+    border-left: 1px solid #1d4a1d;
+}
+
+#main_table__footer .second_group{
+    border: 1px solid #1d4a1d;
+    float: left;
+}
+
+#main_table__footer .elements{
+    display: inline-block;
+    padding: 5px 10px;
+}
 
 /***************                           Responsiveness                       ******************/
 
@@ -583,6 +683,18 @@ textarea {
     /* styles for browsers larger than 480px; */
     .main_home__header{
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:675px){
+    /* styles for mobile browsers smaller than 675px; */
+    #main_table__footer .first_group{
+        border-right: 1px solid #1d4a1d;
+        border-bottom: 0.5px solid #1d4a1d;
+    }
+
+    #main_table__footer .second_group{
+        border-top: 0.5px solid #1d4a1d;
     }
 }
 
