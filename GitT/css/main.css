@@ -731,11 +731,45 @@ textarea {
 #main_table__footer .second_group{
     border: 1px solid #1d4a1d;
     float: left;
+    margin-bottom: 30px;
 }
 
 #main_table__footer .elements{
     display: inline-block;
     padding: 5px 10px;
+}
+/***************                           Carousel                         ******************/
+#carousel_container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.carousel{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+#description span{
+    font-size: 20px;
+}
+
+.carousel-inner>.item>img{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /***************                           Responsiveness                       ******************/

@@ -8,8 +8,7 @@ $(document).ready(function(){
     $(".middle_block").mouseenter(function() {
         $(".img_changer",this).animate({opacity: '0.5'}, "fast");
         $("h3", this).css("text-decoration", "underline");
-    });
-    $(".middle_block").mouseleave(function() {
+    }).mouseleave(function() {
         $(".img_changer",this).animate({opacity: '0'}, "fast");
         $("h3", this).css("text-decoration", "none");
     });
