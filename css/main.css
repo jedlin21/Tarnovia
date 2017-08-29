@@ -842,6 +842,77 @@ textarea {
     height: 114px;
     width: auto;
 }
+/***************                             Sponsors                           ******************/
+#sponsors{
+    border-top: 5px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+#sponsors .container{
+    overflow: hidden;
+    text-align: center;
+}
+
+#sponsors .container-fluid{
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.main_sponsors{
+    overflow: hidden;
+}
+
+.main_sponsor{
+    width: 33.3%;
+    float: left;
+    height: 156px;
+}
+
+.main_sponsor div{
+    height: 100px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.main_sponsor h3{
+    font-weight: 300;
+    color: #333;
+    font-size: 14px;
+}
+
+div.second_sponsors.container{
+    width: 70%;
+}
+
+.second_sponsor{
+    height: 58px;
+    margin: 15px 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
+.second_sponsor{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+#sponsors .second_sponsors .second_sponsor:nth-last-child(n+2):after{
+    content: '';
+    border-right: 1px solid #e2e2e2;
+    display: block;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 /***************                           Responsiveness                       ******************/
 
 @media only screen and (min-width:1440px ){
@@ -889,6 +960,36 @@ textarea {
 
     #the_three_musketeers{
         display: none;
+    }
+}
+
+@media only screen and (max-width:948px){
+
+    #the_three_musketeers{
+        display: none;
+    }
+
+    #sponsors .container-fluid, #sponsors .container{
+        padding: 0px !important;
+    }
+
+    .main_sponsors{
+        text-align: center;
+    }
+
+    .main_sponsor{
+        clear: both;
+        width: 100%;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .second_sponsor{
+        clear: both;
+        width: 100%;
+    }
+
+    #sponsors .second_sponsors .second_sponsor:nth-last-child(n+2):after{
+        border-right: 0;
     }
 }
 
