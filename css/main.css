@@ -913,6 +913,107 @@ div.second_sponsors.container{
     right: 0px;
 }
 
+/***************                             main_footer                          ******************/
+
+.main_footer{
+    background-color: #10321d;
+    text-align: center;
+}
+
+#footer_menu{
+    overflow: hidden;
+}
+
+.f_menu_part{
+    color: #53a746;
+    padding: 0px 20px;
+    margin: 30px 0px;
+    font-size: 16px;
+}
+.f_menu_part:hover{
+    text-decoration: underline;
+}
+
+#footer_social_media{
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.f_social_media_part{
+    float: left;
+    background-color: #173E21;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+}
+
+.f_social_media_part img{
+    width: 40px;
+    position: absolute;
+    top: calc( 50% - 13.5px);
+    left: calc(50% - 20px);
+}
+
+#footer_bottom{
+    overflow: hidden;
+    margin: 40px;
+}
+
+.f_bottom_part{
+    padding: 0 15px;
+    margin: 20px;
+}
+
+.f_bottom_part label{
+    font-size: 14px;
+    color: #53a746;
+    font-weight: 500;
+}
+
+.f_bottom_part input{
+    background-color: #10321d;
+    width: 149px;
+    box-sizing: border-box;
+    border: 1px solid #10321d;
+    border-bottom: 1px solid #1c4f30;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: 3px 3px;
+    color: #53a746;
+}
+
+.f_bottom_part input:hover{
+    border: 1px solid #1c4f30 !important;
+}
+
+
+.f_bottom_part h6, .f_bottom_part h5, .f_bottom_part h4{
+    font-size: 14px !important;
+    color: #205936;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(0.27, 2.58, 0.58, 1);
+    margin: 0px;
+}
+
+.f_bottom_part a:hover{
+    text-decoration: none !important;
+}
+
+.f_bottom_part:hover h5{
+    color: white;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 /***************                           Responsiveness                       ******************/
 
 @media only screen and (min-width:1440px ){
@@ -990,6 +1091,38 @@ div.second_sponsors.container{
 
     #sponsors .second_sponsors .second_sponsor:nth-last-child(n+2):after{
         border-right: 0;
+    }
+}
+
+@media only screen and (min-width:850px){
+    #footer_bottom{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center
+    }
+
+    .f_bottom_part{
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width:640px){
+    #footer_menu{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .f_menu_part{
+        float: left;
+    }
+
+    #footer_menu a:nth-last-child(n+2) .f_menu_part{
+        border-right: 1px solid #53a746;
     }
 }
 
